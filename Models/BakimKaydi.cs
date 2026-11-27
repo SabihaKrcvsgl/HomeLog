@@ -1,7 +1,10 @@
-﻿namespace HomeLog.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace HomeLog.Models
 {
     public class BakimKaydi
     {
+        [Key]
         public int BakimID { get; set; }
 
         public int CihazID { get; set; }

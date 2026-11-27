@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+using HomeLog.Data;
 
 namespace HomeLog
 {
@@ -7,6 +8,8 @@ namespace HomeLog
         public Form1()
         {
             InitializeComponent();
+            using var db = new HomeLogContext();
+            db.Database.EnsureCreated();
         }
     }
 }
